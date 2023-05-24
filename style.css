@@ -1,0 +1,96 @@
+
+/* CSS cascading stlye sheet
+lang that defines style and positioning of html elements 
+
+Ruleset
+
+Selector {
+    declaration
+    property: value;
+    property: value;
+    key: value;
+    */
+    
+    /* Box model */
+
+
+    /* Wildcard selector */
+
+     * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    } 
+    /*ELEMENT SELECTOR*/
+body {
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #ID selector */
+#nav-bar{
+    background-color:rgb(6, 10, 10);
+}
+
+/* .class selector */
+.nav-link {
+    color: rgb(78, 207, 14);
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:focus{
+    color: pink;
+}
+
+/* compound selector */
+body > section > article img {
+    width: 25em;
+    height: 25em;
+    object-fit: cover;
+}
+
+/* Order of specificity example */
+
+/*
+    Order of Specificity
+    1. !important
+    2. in-line style
+    3. id selector
+    4. class
+    5. element
+*/
+.order-of-specificity {
+    
+    
+    background-color: blue;
+
+}
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+
+    background-color: purple;
+
+}
+
+div {
+    color: pink;
+}
+
+.parent-element{
+    width: 750px;
+    height: 100px;
+    border: 2px solid black;
+    /* margin: 1em; */
+}
+
+.child{
+    border: 2px solid purple;
+    margin: 1em;
+    
+}
